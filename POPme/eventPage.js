@@ -1,11 +1,11 @@
 // Set up context menu at install time.
 chrome.runtime.onInstalled.addListener(function() {
-  // var context = "all";
-  var title = "POP ME BABY!"; //change me before submitting
-  var id = chrome.contextMenus.create({"title": title, "contexts": "picture",
+  var context = "all";
+  var title = "POP ME!"; //change me before submitting
+  var id = chrome.contextMenus.create({"title": title, "contexts": [context],
                                          "id": "context" + context});  
   //more options for the context menu
-  var option1 = chrome.contextMenus.create({"title": "Video", "parentId": id, "contexts":"picture",
+  var option1 = chrome.contextMenus.create({"title": "Video", "parentId": id, "contexts":[context],
                                      "id": "videoOption"}); 
   var option2 = chrome.contextMenus.create({"title": "Picture", "parentId": id, "contexts":[context],
                                      "id": "pictureOption"}); 
