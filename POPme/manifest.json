@@ -7,7 +7,7 @@
 	 "permissions": [
 	 		"storage",
 	 		"notifications",
-	 		// "activeTab", 
+	 		// "activeTab",
 	 		"contextMenus"
 	 	],
 	 "icons": {
@@ -18,12 +18,12 @@
 	 "browser_action": {
 	   "default_icon": "picpop16.png",
 	   "default_title": "Have a good day",
-	   "default_popup": "popup.html",
+	   //"default_popup": "popup.html",
 	   "title": "Your Browser Action Name"
 	},
-	"chrome_url_overrides" : {
-	  "newtab": "newtab.html"
-	},
+	//"chrome_url_overrides" : {
+	//  "newtab": "newtab.html"
+	//},
 
 	"background": {
 		"scripts": ["eventPage.js", "background.js"],
