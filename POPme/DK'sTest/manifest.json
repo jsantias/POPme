@@ -5,10 +5,6 @@
 	"version": "1",
 	"author": "Tri-hrds",
 
-	"permissions": [
-		"alwaysOnTopWindows"
-	],
-
 	"background": {
 	// You can have more javascript scripts here to run 
 	// Just add commas and more scripts
