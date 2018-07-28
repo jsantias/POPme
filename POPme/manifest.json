@@ -1,0 +1,16 @@
+{
+ "manifest_version": 2,
+ "name": "Popme",
+ "description": "Make any video or picture in to a new popup window. Allowing you to watch a video while doing another task or read a picture while studying",
+ "version": "1",
+ "author": "Tri-hrds",
+ "browser_action": {
+   // "default_icon": "#",
+   "default_title": "Have a good day",
+   "default_popup": "popup.html"
+},
+"chrome_url_overrides" : {
+  "newtab": "newtab.html"
+},
+ "permissions": ["activeTab"]
+}
