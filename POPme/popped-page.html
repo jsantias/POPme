@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>You Popped it!</title>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-			}
-		</style>
-	</head>
-	<body> 
-		<!-- Plays a video -->
-		<iframe width="100%" height="480px"
-			src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-		</iframe>
-		<div id="url-form-div" width="100%" height="50px">
-			<form>
-				Link: <input type="text" name="url-link">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-	</body>
-	
+<head>
+    <title>You Popped it!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Plays a video -->
+    <iframe id="videoLink" width="100%" height="480px"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe> 
+
+    <div id="url-form-div" width="100%" height="50px">
+        <form name="vidForm">
+            Link: <input type="text" name="name" id="uniqueID" value="" />
+            <input type="button" value="Submit" onclick="getVidLink()" />
+        </form>
+    </div>
+    <p id="demo"></p>
+    <script>
+        function getVidLink() {
+            var linkFrontVar = "https://www.youtube.com/embed/";
+            var nameValue = document.getElementById("uniqueID").value;
+            var matchedVal = linkFrontVar.match(/watch?v=(.*)/);
+
+            var fullLink = linkFrontVar + matchedVal[1];
+            document.getElementById("demo").innerHTML = fullLink;
+           // document.getElementById('videoLink').src = nameValue;
+        }
+    </script>
+</body>
+
 </html>

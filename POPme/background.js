@@ -1,7 +1,7 @@
 // When the chrome extension button is clicked, execute
 chrome.browserAction.onClicked.addListener(function () {
 	function openWin() {
-		myWindow = window.open("popped-page.html", "", "width=880, height=520");
+		myWindow = window.open("popped-page.html", "", "width=880, height=480");
 	}
 	openWin();
 
