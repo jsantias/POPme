@@ -7,23 +7,20 @@
 	 "permissions": [
 	 		"storage",
 	 		"notifications",
-	 		// "activeTab",
-	 		"contextMenus"
-	 	],
+			 "contextMenus"
+		],
+	
 	 "icons": {
 	 	"128": "picpop128.png",
 	 	"48": "picpop48.png",
-	 	"16": "picpop16.png"
-	},
+		 "16": "picpop16.png"
+		},
+
 	 "browser_action": {
 	   "default_icon": "picpop16.png",
 	   "default_title": "Have a good day",
-	   //"default_popup": "popup.html",
 	   "title": "Your Browser Action Name"
-	},
-	//"chrome_url_overrides" : {
-	//  "newtab": "newtab.html"
-	//},
+	 },
 
 	"background": {
 		"scripts": ["eventPage.js","background.js"],
