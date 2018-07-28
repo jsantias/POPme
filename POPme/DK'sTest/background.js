@@ -1,13 +1,10 @@
 // When the chrome extension button is clicked, execute
 chrome.browserAction.onClicked.addListener(function () {
 	function openWin() {
-		myWindow = window.open("popped-page.html", "", "width=880, height=520");
+		myWindow = window.open("popped-page.html", "", "width=880, height=540");
 	}
 	openWin();
-	window.location.href = "popped-page.html";
-
-	// Opens a new window of the given url
-    // chrome.windows.create({ url: chrome.runtime.getURL("popped-page.html") });
+	
 });
 
 /* Windows on top function 'currently does not work'
